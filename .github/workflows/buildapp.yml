@@ -11,7 +11,7 @@ on:
         default: "3.0.4"
         required: true
         type: string
-      decrypted_youtube_url:
+      decrypted_youtube_url:https://www.dropbox.com/scl/fo/agn7826agxvxv8xoishjp/AGp2CIGItJBZpDAw_6hRAcQ?rlkey=ejlo517jxthhavbukzpd4jowy&st=8f94r7xc&dl=0
         description: "Direct URL to the decrypted YouTube ipa. The version of YouTube will be detected automatically."
         default: ""
         required: true
