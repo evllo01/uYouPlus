@@ -4,6 +4,21 @@
 name: Build and Release uYouPlus
 
 on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-dotnet@v3
+      - run: dotnet --version
+      - run: dotnet build
+
+on:
   workflow_dispatch:
     inputs:
       uyou_version:
